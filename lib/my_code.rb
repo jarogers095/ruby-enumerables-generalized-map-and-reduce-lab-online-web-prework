@@ -16,5 +16,5 @@ def reduce(source_array)
     result = yield(result, element)
   end
   
-  return total
+  return result
 end
