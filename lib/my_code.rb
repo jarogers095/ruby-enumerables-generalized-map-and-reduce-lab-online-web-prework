@@ -2,7 +2,7 @@
 def map(source_array)
   return_array = []
   
-  return_array.each do |element|
+  source_array.each do |element|
     yield(element)
   end
   
