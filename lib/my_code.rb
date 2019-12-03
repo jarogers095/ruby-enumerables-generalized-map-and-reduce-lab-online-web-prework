@@ -18,8 +18,9 @@ def reduce(source_array, starting_point = 0)
     result = yield(result, element)
     puts result 
     puts element
-    puts "done"
   end
   
+  puts result
+  puts "done"
   return result
 end
