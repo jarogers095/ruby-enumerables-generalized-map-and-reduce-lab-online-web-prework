@@ -9,10 +9,15 @@ def map(source_array)
   return return_array
 end
 
+
+
 def reduce(source_array, starting_point = 0)
   result = 0 + starting_point
   
   source_array.each do |element|
+    puts result 
+    puts element
+    puts "done"
     result = yield(result, element)
   end
   
