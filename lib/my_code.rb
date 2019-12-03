@@ -12,7 +12,11 @@ end
 
 
 def reduce(source_array, starting_point = 0)
-  result = nil
+  if(source_array[0].is_a? Numeric)
+    result = 0 + starting_point
+  else
+    result = false
+  end
   
   source_array.each do |element|
     result = yield(result, element)
